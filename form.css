@@ -1,0 +1,56 @@
+h1{
+    color: #000;
+  }
+
+ul{
+    color: #000;
+    list-style-type: square;
+  }
+
+#tutorial{
+  height: 1500px;
+  border: 2px solid white;
+  background-color: burlywood;
+ } 
+
+#Intro1{
+    background-color: pink;
+    border:3px solid #000;
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 40px;
+    text-align: center;
+  }  
+
+#list{
+  text-align: center;
+  
+  color: black;
+}  
+
+a#py,a#html,a#css,a#js,a#sql{
+  display: inline-block;
+  height: 150px;
+  width: 200px;
+  color: black;
+  font-size: large;
+  font-weight:bold;
+  margin-left: 23px;
+  background-color: pink;  
+  border:3px solid #000;
+  text-align: center;
+  line-height: 100px;
+
+}
+a[href="register.html"]{
+  display: block;
+  margin: 100px;
+  text-align: center;
+} 
+
+
+
+
+
+

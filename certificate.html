@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EyeNa</title>
+    
+    <style>
+    header#head{      
+        background: black;
+        position: fixed;
+        padding-bottom: 10px;
+        left: 0;  
+        right: 0;  
+        top: 0;  
+        height: 50px;  
+        display: flex; 
+        font-weight: 900;
+        font-family: cursive; 
+        align-items: center;  
+        box-shadow: 0 0 5px 0 white;
+    }  
+    header#CourceHead{      
+        background: rgb(212, 91, 91);
+        font-family: Arial, Helvetica, sans-serif;
+        position: fixed;  
+        left: 20px;   
+        right: 20px; 
+        top: 45px;  
+        height: 30px;  
+        display: flex;  
+        align-items: center;
+        } 
+    header * {  
+        display: inline;  
+    }  
+    header li a{  
+        margin: 20px; 
+        color: white; 
+        font-size: small;
+    }         
+    a{
+        text-decoration: none;
+    } 
+    
+    .certificate{
+        display:block;
+        padding: 1em;
+        margin: 1em;
+        margin-top: 60px;
+        border: 4px solid rgb(57, 8, 8);
+        background-color: rgb(237, 195, 195);
+        max-width: 2000px;
+    }
+    .size{
+        display:block;
+        padding: 1em;
+        margin: 1em;
+        font-size: x-large;
+        border: 5px solid #ddd;
+        background-color: #eee;
+        max-width: 1500px;
+    }    
+    input{
+        height: 2em;
+        width: 300px;
+    }
+    </style>
+</head>
+
+<body>
+    <header id="head"> 
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>  
+                </li>  
+                <li>
+                    <a href="#list">Cources</a>  
+                </li>  
+                <li>
+                    <a href="#services">Services</a>  
+                </li>  
+                <li>
+                    <a href="certificate.html">Get Certified</a>  
+                </li>  
+                <li>
+                    <a href="#join">Join Us</a>  
+                </li>  
+            </ul>  
+        </nav>  
+    </header>
+
+    <div class="certificate">
+        <h2>CERTIFICATE</h2>
+
+        <form class="size" action="thankyou.html">
+            <label for="name">Full Name:</label>
+            <input id="name" type="text" name="name" placeholder="full name" required>
+            <br><br>
+            <label for="mail">Email:</label>
+            <input id="mail" type="email" name="mail" placeholder="abc@gmail.com" required>
+            <br><br>
+            <label for="num">Contact no: +91 </label>
+            <input id="num" type="number" name="num" placeholder="9876543210" required>
+            <br>
+
+            <h3>Please Choose your cource:</h3>
+            <select class="" name="expe">
+                <option value="Python">Python</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JAva Script">JAva Script</option>
+                <option value="jQuery">jQuery</option>
+                <option value="DJango">DJango</option>
+                <option value="Decipher Tool XML">Decipher Tool XML</option>
+                <option value="Data Analysis">Data Analysis</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="Data Science">Data Science using Python</option>
+                <option value="Statics For Data Science">Statics For Data Science</option>
+                <option value="Ms Excel">Ms Excel</option>
+                <option value="Power BI / Tablue">Power BI / Tablue</option>
+            </select>
+
+            <h3>Enter your College Name:</h3>
+            <textarea name="pref" cols="40" placeholder="write here"></textarea>
+            <br>
+            <br>   
+        
+            <input type="submit" name="sub" value="Submit" style="height: 2em; width: 5em; border-radius: 25px; font-size: 1.5em; background-color: rgb(250, 248, 83);">
+
+        </form>
+    </div>        
+</body>
+</html>
