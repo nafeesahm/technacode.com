@@ -25,13 +25,7 @@ ul{
 
 #Intro1:hover{
   color: white;
-}  
-
-#list{
-  text-align: center;
-  
-  color: black;
-}  
+}   
 
 #py,#html,#css,#js,#sql{
   display: inline-block;
