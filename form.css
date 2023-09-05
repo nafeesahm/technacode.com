@@ -33,9 +33,9 @@ ul{
   color: black;
 }  
 
-a#py,a#html,a#css,a#js,a#sql{
+#py,#html,#css,#js,#sql{
   display: inline-block;
-  height: 150px;
+  height: 200px;
   width: 200px;
   color: black;
   font-size: large;
