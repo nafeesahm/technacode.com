@@ -58,20 +58,23 @@
             text-decoration: none;
         }    
 
+        /* Base styles for larger screens */
+
+        /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
         @media screen and (max-width: 768px) {
-        /* CSS rules for screens up to 768px wide */
+            /* Mobile-specific styles go here */
 
-            body{
-            width: 80%; /* Adjust the percentage as needed */
-            margin: 0 auto; /* Center the container horizontally */
-            }
-
+            /* Example: Make the font size smaller for mobile */
             body {
-            display: flex;
-            justify-content: center; /* Center items horizontally */
-            align-items: center; /* Center items vertically */
+                font-size: 14px;
             }
-        }    
+
+            /* Example: Adjust padding or margins for smaller screens */
+            body {
+                padding: 10px;
+            }
+        }
+    
 
     </style>  
 </head>      
