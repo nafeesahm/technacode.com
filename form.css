@@ -39,12 +39,10 @@ ul{
   border:3px solid #000;
   text-align: center;
   line-height: 100px;
-
 }
 a[href="register.html"]{
   display: block;
   margin: 100px;
-  text-align: center;
 } 
 
 
