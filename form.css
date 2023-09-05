@@ -29,7 +29,7 @@ ul{
 
 #py,#html,#css,#js,#sql{
   display: inline-block;
-  height: 200px;
+  height: 130px;
   width: 200px;
   color: black;
   font-size: large;
@@ -42,7 +42,6 @@ ul{
 }
 a[href="register.html"]{
   display: block;
-  text-indent: 1000px;
 } 
 
 
