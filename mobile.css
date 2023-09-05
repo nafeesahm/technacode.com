@@ -13,24 +13,28 @@
             .img1 {
                 width: 280px;
             }
-            header#head{        
+            #head{        
             height: 80px;   
             }  
 
-            header#CourceHead{        
+            #CourceHead{        
             height: 100px;  
-            margin-top: 80px; 
+            margin-top: 20px; 
+            text-emphasis: none;
             } 
+
             body{  
             height: 130px;  
             margin-top: 180px;  
             padding: 30px;    
             } 
+
             #Intro1{
             height: 1070px;
             font-size: x-large;
             padding-top: 50px;
             }
+
             #py,#html,#css,#js,#sql{
                 height: 130px;
                 margin-left: 40px;
