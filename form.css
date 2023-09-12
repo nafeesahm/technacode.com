@@ -8,40 +8,40 @@ ul{
   }
 
 #tutorial{
-  height: 1500px;
-  border: 2px solid white;
-  background-color: burlywood;
+  height: 823px;
+  border: 2px solid rgb(226, 16, 16);
+  background-color: pink;
  } 
 
 #Intro1{
     background-color: black;
     border:3px solid #000;
-    height: 500px;
+    color: white;
+    height: 450px;
     font-size: x-large;
-    padding-top: 50px;
-    margin-bottom: 100px;
+    position: relative;
+    top: -5px;
     text-align: center;
   }  
 
 #Intro1:hover{
-  color: white;
+  border-radius: 300px;
 }   
 
 #py,#html,#css,#js,#sql{
-  display: inline-block;
-  height: 130px;
-  width: 200px;
+  height: 200px;
   color: black;
-  font-size: large;
+  font-size: xx-large;
   font-weight:bold;
-  margin-left: 23px;
   background-color: pink;  
-  border:3px solid #000;
+  border:2px solid #000;
   text-align: center;
-  line-height: 100px;
+  line-height: 170px;
 }
 a[href="register.html"]{
-  display: block;
+  position: fixed;
+  left: 1120px;
+  top: 3px;
 } 
 
 
