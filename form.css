@@ -7,10 +7,50 @@ ul{
     list-style-type: square;
   }
 
+a:hover{      
+    background-color: mediumaquamarine; 
+    color: black;
+}
+a{
+  text-decoration: none;
+} 
+header#head{      
+  background-color: rgb(212, 91, 91);
+  position: fixed;
+  text-indent: 20px;
+  left: 0;  
+  right: 0;  
+  top: 0;  
+  height: 50px; 
+  font-weight: bolder;
+  font-size: xx-large;
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  align-items: center;  
+  box-shadow: 0 0 40px 0 blue;
+}  
+header#CourceHead{      
+  background: rgb(212, 91, 91);
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;  
+  left: 20px;   
+  right: 20px; 
+  top: 45px;  
+  height: 30px;  
+  display: flex;  
+  align-items: center;
+} 
+header * {  
+  display: inline;  
+}  
+header li a{  
+  margin: 20px; 
+  color: white; 
+  font-size: small;
+} 
+
+
 #tutorial{
   height: 823px;
-  border: 2px solid blue;
-  background-color: pink;
  } 
 
 #Intro1{
@@ -25,24 +65,24 @@ ul{
   }  
 
 #Intro1:hover{
-  border-radius: 300px;
+  border-radius: 10px;
+  color: #000;
+  background-color: wheat;
 }   
 
 #py,#html,#css,#js,#sql{
   height: 200px;
-  color: black;
   font-size: xx-large;
   font-weight:bold;
-  background-color: pink;  
+  background-color: wheat;  
   border:2px solid #000;
   text-align: center;
   line-height: 170px;
 }
 #regi {
   position: fixed;  
-  left: 1120px;    
-  top: 45px;  
-  
+  left: 1123px;    
+  top: 10px;  
 } 
 
 
