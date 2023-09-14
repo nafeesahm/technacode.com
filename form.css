@@ -38,10 +38,10 @@ ul{
   text-align: center;
   line-height: 170px;
 }
-a[href="register.html"] #reg{
+a[href="register.html"] #regi{
   position: fixed;
   left: 1100px;
-  top: 3px;
+  top: 40px;
 } 
 
 
