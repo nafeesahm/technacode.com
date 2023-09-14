@@ -38,7 +38,7 @@ ul{
   text-align: center;
   line-height: 170px;
 }
-header#CourceHead a[href="register.html"] #regi{
+#regi a[href="register.html"]{
   position: fixed;
   left: 1120px;
   top: 45px;
