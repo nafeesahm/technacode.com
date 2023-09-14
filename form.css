@@ -39,9 +39,10 @@ ul{
   line-height: 170px;
 }
 #regi a[href="register.html"]{
-  position: fixed;
-  left: 1120px;
-  top: 45px;
+  position: fixed;  
+  left: 1120px;    
+  top: 45px;  
+  
 } 
 
 
