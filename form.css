@@ -38,9 +38,9 @@ ul{
   text-align: center;
   line-height: 170px;
 }
-a[href="register.html"]{
+#head a[href="register.html"]{
   position: fixed;
-  left: 1200px;
+  left: 1100px;
   top: 3px;
 } 
 
