@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>EyeNaf</title>
-    <style>   
+    <style>    
         body{  
             height: 125px;  
             margin-top: 70px;  
@@ -17,6 +17,46 @@
             background-size: cover;  
             font-family: sans-serif;  
             }  
+        .dropbtn {
+            background-color:  rgb(212, 91, 91);
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            left: -40px;
+            }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }  
+        .dropdown-content a {
+            color: black;
+            padding: 5px 16px;
+            text-decoration: none;
+            display: block;            
+            } 
+            
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+            }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+            }            
     </style>  
 </head>      
 
@@ -25,6 +65,9 @@
         <nav>
             <ul>
                 <li>
+                    <img id="img" src="./iNaf_logo.jpeg">  
+                </li>
+                 <li>
                     <a href="index.html">Home</a>  
                 </li>  
                 <li>
@@ -48,96 +91,156 @@
         <nav>  
             <ul>  
                 <li>  
-                    <a href="HTML_page.html">HTML</a>  
+                    <div class="dropdown">
+                        <button class="dropbtn">Web Development</button>
+                        <div class="dropdown-content">
+                            <a href="#">HTML</a>
+                            <a href="#">CSS</a>
+                            <a href="#">JavaScript</a>
+                            <a href="#">jQuery</a>
+                            <a href="#">BootStrap</a>
+                            <a href="#">Python</a>
+                            <a href="#">Django</a>
+                        </div>
+                    </div>  
                 </li>  
                 <li>  
-                    <a href="CSS_page.html">CSS</a>  
+                    <div class="dropdown">
+                        <button class="dropbtn">Data Analysis</button>
+                        <div class="dropdown-content">
+                            <a href="#">Statistics</a>
+                            <a href="#">Python</a>
+                            <a href="#">Numpy</a>
+                            <a href="#">Pandas</a>
+                            <a href="#">MatPlotlib</a>
+                            <a href="#">Seaborn</a>
+                            <a href="#">Excel</a>
+                        </div>
+                    </div>  
                 </li>  
                 <li>  
-                    <a href="javascript.html">JavaScript</a>  
+                    <div class="dropdown">
+                        <button class="dropbtn">Data Science</button>
+                        <div class="dropdown-content">
+                            <a href="#">Numpy</a>
+                            <a href="#">Pandas</a>
+                            <a href="#">matplotlib</a>
+                            <a href="#">Machine Learning</a>
+                        </div>
+                    </div>                
                 </li> 
                 <li>  
-                    <a href="jquery.html">jQuery</a>  
+                    <div class="dropdown">
+                        <button class="dropbtn">Machine Learning</button>
+                        <div class="dropdown-content">
+                            <a href="#">Data Science Tool kit</a>
+                            <a href="#">Statistics & Exploratory Data Analytics</a>
+                            <a href="#">Supervised Learning</a>
+                            <a href="#">UnSupervised Learning</a>
+                            <a href="#">Reinforcement Learning</a>
+                            <a href="#">Deployment and Capstone Project</a>
+                        </div>
+                    </div>                
                 </li>
                 <li> 
-                    <a href="python.html"">Python</a>  
+                    <div class="dropdown">
+                        <button class="dropbtn">Artificial Intelligence</button>
+                        <div class="dropdown-content">
+                            <a href="#">Machine Learning</a>
+                            <a href="#">Deep learning</a>
+                            <a href="#">Natural Language Processing</a>
+                            <a href="#">Face Detection</a>
+                            <a href="#">Sentiment Analyzer</a>
+                            <a href="#">TensorFlow and Neural Network</a>
+                        </div>
+                    </div>                
                 </li>  
                 <li>  
-                    <a href="sql.html">SQL</a> 
+                    <div class="dropdown">
+                        <button class="dropbtn">Big Data</button>
+                        <div class="dropdown-content">
+                            <a href="#">VM Ware Tool kit</a>
+                            <a href="#">Hadoop</a>
+                            <a href="#">Hive</a>
+                            <a href="#">HBase</a>
+                            <a href="#">Apache Pig</a>
+                            <a href="#">Spark & PySpark</a>
+                            <a href="#">Skoop</a>
+                        </div>
+                    </div>                
+                </li>                
+                <li>  
+                    <div class="dropdown">
+                        <button class="dropbtn">Databases</button>
+                        <div class="dropdown-content">
+                            <a href="#">MySQL</a>
+                            <a href="#">SQL Server Management Studio</a>
+                            <a href="#">MongoDB</a>
+                            <a href="#">PostgreSQL</a>
+                            <a href="#">Oracle RDBMS</a>
+                            <a href="#">Salesforce</a>
+                            <a href="#">DevOps</a>
+                        </div>
+                    </div>                
                 </li>
-                <li>  
-                    <a href="django.html">Django</a>  
-                </li>
-                <li>  
-                    <a href="numpy.html">Numpy</a>  
-                </li>
-                <li>  
-                    <a href="pandas.html">Pandas</a>  
-                </li>
-                <li>  
-                    <a href="matplotlib.html">MatPlotlib</a>  
-                </li> 
-                <li>  
-                    <a href="seaborn.html">Seaborn</a>  
-                </li> 
+ 
             </ul>  
         </nav>  
     </header>
 
-    <header id="regi">
-    <a href="register.html"><span title="Click here to register">
-        <input type="submit" name="sub" value="Register" 
-        style="height: 40px; width: 120px; 
-        border-radius: 5px; font-size: 1.5em; background: rgb(65, 196, 50);"></span>
-    </a>
-    </header>
+    <div id="regi">
+        <a href="register.html">
+            <input type="submit" name="sub" value="Log in"
+            style="height: 40px; width: 100px; font-size: 1.3em; font-weight: bold;
+            border-radius: 20px;  background: rgb(65, 196, 50);">
+        </a>
+    </div>
 
     <div style="font-size: xx-large; font-weight: bold; color: white;" align="center">Learn to Code<br>
         <p style="font-size: 20px; font-family: cursive">With the world's largest web developer site.</p>
     </div>
 
-    <div id="tutorial">
-        <img class="img1" src="/AI-Technology-Creation-Concept.gif" alt="please wait..." height="370px" width="1190px">
-        
-        <div id="Intro1">
-            <p>
-            <p style="font-weight: 900; font-size: xx-large;"><u>My Learning</u></p>
-            <br>
-            Track your progress with our free "My Learning" program.
-            <br>
-            Log in to your account, and start earning points!    
-            <br><br>    
-            This website is usefull for learning of Technology.<br>
-            You can learn from basic level to advance label of programming languages and front-end technology.<br>
-            Also, you can learn data science and databases, i.e., (MongoDB, SQL)<br><br>
-            <b>Note: First you have to register yourself to learn the technology.</b>
-            <br><br>
+    <img class="img1" src="/AI-Technology-Creation-Concept.gif" alt="please wait..." height="370px" width="1185px">
+    
+    <div id="Intro1">
+        <p>
+        <p style="font-weight: 900; font-size: xx-large;"><u>My Learning</u></p>
+        <br>
+        Track your progress with our free "My Learning" program.
+        <br>
+        Log in to your account, and start earning points!    
+        <br><br>    
+        This website is usefull for learning of Technology.<br>
+        You can learn from basic level to advance label of programming languages and front-end technology.<br>
+        Also, you can learn data science and databases, i.e., (MongoDB, SQL)<br><br>
+        <b>Note: First you have to register yourself to learn the technology.</b>
+        <br><br>
 
-            Select Your Cource From  Below List...👇    
-            </p>
+        Select Your Cource From  Below List...👇    
+        </p>
+    </div>
+    
+    </div id="clist">
+        <div id="py">
+            <a href="python.html"><span title="Click here to learn python">Python</span></a>
         </div>
         
-        </div id="clist">
-            <div id="py">
-                <a href="python.html"><span title="Click here to learn python">Python</span></a>
-            </div>
-            
-            <div id="html">
-                <a href="HTML_page.html"><span title="Click here to learn HTML">HTML</span></a>
-            </div>
-            
-            <div id="css">
-                <a href="CSS_page.html"><span title="Click here to learn CSS">CSS</span></a>
-            </div>
-            
-            <div id="js">
-                <a href="javascript.html"><span title="Click here to learn JavaScript">Java Script</span></a>
-            </div>
-            
-            <div id="sql">
-                <a href="sql.html"><span title="Click here to learn SQL">SQL</span></a>
-            </div> 
+        <div id="html">
+            <a href="HTML_page.html"><span title="Click here to learn HTML">HTML</span></a>
         </div>
+        
+        <div id="css">
+            <a href="CSS_page.html"><span title="Click here to learn CSS">CSS</span></a>
+        </div>
+        
+        <div id="js">
+            <a href="javascript.html"><span title="Click here to learn JavaScript">Java Script</span></a>
+        </div>
+        
+        <div id="sql">
+            <a href="sql.html"><span title="Click here to learn SQL">SQL</span></a>
+        </div> 
+
         <br><br><br>    
     </div>
 

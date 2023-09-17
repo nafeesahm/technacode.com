@@ -7,37 +7,48 @@ ul{
     list-style-type: square;
   }
 
-a:hover{      
-    background-color: mediumaquamarine; 
-    color: black;
-}
 a{
   text-decoration: none;
 } 
-header#head{      
-  background-color: rgb(212, 91, 91);
+#img{
+  height: 50px;
+  width: 100px;
+  position: relative;
+  right: 20px;
+}
+#head{      
+  background-color: #fff;
   position: fixed;
-  text-indent: 20px;
+  text-indent: -20px;
   left: 0;  
   right: 0;  
   top: 0;  
   height: 50px; 
-  font-weight: bolder;
-  font-size: xx-large;
-  font-family: Georgia, 'Times New Roman', Times, serif; 
+  line-height: 50px; 
   align-items: center;  
-  box-shadow: 0 0 40px 0 blue;
 }  
+#head a{
+  color: #000;
+  font-weight: bolder;  
+  font-size: 16px;
+  position: relative;
+  bottom: 18px;
+  right: 10px;
+  padding: 14px;
+  margin: 0px;
+  border: none;
+  cursor: pointer;  
+}
+#head a:hover{      
+  background-color: mediumaquamarine; 
+  color: black;
+}
 header#CourceHead{      
   background: rgb(212, 91, 91);
-  font-family: Arial, Helvetica, sans-serif;
   position: fixed;  
-  left: 20px;   
-  right: 20px; 
-  top: 45px;  
-  height: 30px;  
-  display: flex;  
-  align-items: center;
+  left: 38px;   
+  right: 40px; 
+  top: 50px;    
 } 
 header * {  
   display: inline;  
@@ -48,26 +59,19 @@ header li a{
   font-size: small;
 } 
 
-
-#tutorial{
-  height: 823px;
- } 
-
 #Intro1{
-    background-color: black;
+    background-color: wheat;
     border:3px solid #000;
-    color: white;
+    color: #000;
     height: 450px;
-    font-size: x-large;
-    position: relative;
-    top: -5px;
+    font-size: large;
     text-align: center;
   }  
 
 #Intro1:hover{
   border-radius: 10px;
   color: #000;
-  background-color: wheat;
+  background-color: mediumaquamarine;
 }   
 
 #py,#html,#css,#js,#sql{
@@ -79,10 +83,15 @@ header li a{
   text-align: center;
   line-height: 170px;
 }
+#py:hover,#html:hover,#css:hover,#js:hover,#sql:hover{      
+  background-color: mediumaquamarine; 
+  color: black;
+}
+
 #regi {
   position: fixed;  
-  left: 1123px;    
-  top: 10px;  
+  left: 1150px;    
+  top: 5px;  
 } 
 
 

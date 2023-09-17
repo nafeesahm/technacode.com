@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="mobile.css">
     <title>EyeNaf</title>
     
-    <style>    
+    <style>   
+        body{  
+            height: 125vh;  
+            margin-top: 5px;  
+            padding: 30px;  
+            background-size: cover;  
+            font-family: sans-serif;  
+            } 
     .certificate{
         display:block;
         padding: 1em;
         margin: 1em;
-        margin-top: 60px;
+        margin-top: 20px;
         border: 4px solid rgb(57, 8, 8);
         background-color: rgb(237, 195, 195);
         max-width: 2000px;
@@ -33,10 +40,14 @@
     </style>
 </head>
 
-<body>
+<body style="background-color: rgb(79, 26, 26)">
+
     <header id="head"> 
         <nav>
             <ul>
+                <li>
+                    <img id="img" src="./iNaf_logo.jpeg">  
+                </li>
                 <li>
                     <a href="index.html">Home</a>  
                 </li>  
@@ -57,7 +68,7 @@
     </header>
 
     <div class="certificate">
-        <h2>CERTIFICATE</h2>
+        <h2 style="margin-left: 20px; margin-top: 5px; height: 10px;">CERTIFICATE</h2>
 
         <form class="size" action="thankyou.html">
             <label for="name">Full Name:</label>
@@ -92,7 +103,7 @@
             <br>
             <br>   
         
-            <input type="submit" name="sub" value="Submit" style="height: 2em; width: 5em; border-radius: 25px; font-size: 1.5em; background-color: rgb(250, 248, 83);">
+            <input type="submit" name="sub" value="Submit" style="height: 2em; width: 5em; border-radius: 20px; font-size: 1.0em; margin-left: 450px; background-color: rgb(65, 196, 50); font-weight: bolder;">
 
         </form>
     </div>        
