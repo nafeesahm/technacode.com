@@ -3,13 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>inaf india</title>
+    <script>
+        // Disable zooming via mouse scroll wheel
+        function disableMouseScroll(event) {
+            if (event.ctrlKey === true) {
+                event.preventDefault();
+            }
+        }
+
+        // Add an event listener to the document
+        document.addEventListener("wheel", disableMouseScroll, { passive: false });
+    </script>
     <style>    
-        body{  
+        body{
             height: 125px;  
             margin-top: 70px;  
             padding: 30px;  
@@ -35,7 +46,6 @@
             display: none;
             position: absolute;
             background-color: #cbedf8;
-            font-weight: bold;
             min-width: 150px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
@@ -48,17 +58,20 @@
             } 
             
         .dropdown-content a:hover {
-            background-color: #f7aaaa
+            background-color: #f7aaaa;
+            font-size: 16px;
             }
 
         .dropdown:hover .dropdown-content {
             display: block;
+            
             }
 
         .dropdown:hover .dropbtn {
             background-color: #3e8e41;
+            font-size: 16px;
             }            
-    </style>  
+    </style> 
 </head>      
 
 <body>
@@ -72,10 +85,10 @@
                     <a href="index.html">Home</a>  
                 </li>  
                 <li>
-                    <a href="#list">Exercises</a>  
+                    <a href="#Subjects">Subjects</a>  
                 </li>  
                 <li>
-                    <a href="#services">Services</a>  
+                    <a href="#Jobs">Jobs</a>  
                 </li>  
                 <li>
                     <a href="certificate.html">Get Certified</a>  

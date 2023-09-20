@@ -34,15 +34,15 @@ a{
   position: relative;
   bottom: 18px;
   right: 10px;
-  padding: 18px;
-  margin: 0px;
+  padding: 13px;
+  margin: 5px;
   border: none;
   cursor: pointer;  
-
 }
 #head a:hover{      
-  background-color: mediumaquamarine; 
+  background-color: rgb(245, 236, 236); 
   color: black;
+  font-size: 18px;
 }
 header#CourceHead{      
   background: rgb(212, 91, 91);
@@ -68,7 +68,7 @@ header li a{
 
 
 .image-container img {
-  width: 1266px;
+  width: 1265px;
   height: 500px;
   margin-top: -15px;
   margin-left: -40px;
@@ -77,18 +77,16 @@ header li a{
 
 #Intro1{
     background-color: wheat;
-    border:1px solid #000;
+    border: 0px solid #000;
     color: #000;
-    height: 450px;
     font-size: medium;
     text-align: center;
     height: 400px;
-    margin-top: -4px;
-  }  
-
-#Intro1:hover{
-  text-decoration: underline;
-}   
+    width: 1264px;
+    margin-left: -40px;
+    margin-top: -5px;
+    padding-top: 20px;
+  }    
 
 #py,#html,#css,#js,#sql{
   display: inline-block;
