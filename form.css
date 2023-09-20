@@ -59,43 +59,153 @@ header li a{
   font-size: small;
 } 
 
-#Intro1{
-    background-color: wheat;
-    border:3px solid #000;
-    color: #000;
-    height: 450px;
-    font-size: large;
-    text-align: center;
-  }  
-
-#Intro1:hover{
-  border-radius: 10px;
-  color: #000;
-  background-color: mediumaquamarine;
-}   
-
-#py,#html,#css,#js,#sql{
-  height: 200px;
-  font-size: xx-large;
-  font-weight:bold;
-  background-color: wheat;  
-  border:2px solid #000;
-  text-align: center;
-  line-height: 170px;
-}
-#py:hover,#html:hover,#css:hover,#js:hover,#sql:hover{      
-  background-color: mediumaquamarine; 
-  color: black;
-}
-
 #regi {
   position: fixed;  
   left: 1150px;    
   top: 5px;  
 } 
 
+#Intro1{
+    background-color: wheat;
+    border:1px solid #000;
+    color: #000;
+    height: 450px;
+    font-size: medium;
+    text-align: center;
+  }  
+
+#Intro1:hover{
+  border-radius: 10px;
+  color: #000;
+  text-decoration: underline;
+}   
+
+#py,#html,#css,#js,#sql{
+  display: inline-block;
+}
+
+#py{
+  height: 200px;
+  width: 250px;
+  font-size: large;
+  font-weight:bold;
+  background-color: rgb(157, 154, 149);  
+  border:1px solid #000;
+  text-align: center;
+  line-height: 190px;
+}
+
+#html{
+  height: 200px;
+  width: 220px;
+  font-size: large;
+  font-weight:bold;
+  background-color: rgb(203, 171, 111);  
+  border:1px solid #000;
+  text-align: center;
+  line-height: 190px;
+}
+
+#css{
+  height: 200px;
+  width: 220px;
+  font-size: large;
+  font-weight:bold;
+  background-color: rgb(247, 189, 82);  
+  border:1px solid #000;
+  text-align: center;
+  line-height: 190px;
+}
+#js{
+  height: 200px;
+  width: 250px;
+  font-size: large;
+  font-weight:bold;
+  background-color: rgb(153, 153, 153);  
+  border:1px solid #000;
+  text-align: center;
+  line-height: 190px;
+}
+#sql{
+  height: 200px;
+  width: 220px;
+  font-size: large;
+  font-weight:bold;
+  background-color: rgb(199, 202, 235);  
+  border:1px solid #000;
+  text-align: center;
+  line-height: 190px;
+}
+#py:hover{
+  background-color: rgb(201, 205, 204); 
+  border-radius: 10px;
+  font-size: xx-large;
+}
+#html:hover{
+  background-color: rgb(78, 161, 82); 
+  border-radius: 10px;
+  font-size: xx-large;
+}
+#css:hover{
+  background-color: rgb(242, 224, 60); 
+  border-radius: 10px;
+  font-size: xx-large;
+}
+#js:hover{
+  background-color: mediumaquamarine; 
+  border-radius: 10px;
+  font-size: xx-large;
+}
+#sql:hover{      
+  background-color: rgb(220, 229, 240); 
+  border-radius:10px;
+  font-size: xx-large;
+}
+
+.end{
+  height: 250px;
+  width: 1263px;
+  display: block;
+  line-height: 150px;
+  background-color: rgb(76, 51, 56);
+  margin-left: -38px;
+  margin-top: -20px;
+}
+.end1{
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  line-height: 50px;
+  text-indent: 11px;
+  margin: auto;
+  background-color: rgb(40, 45, 201);  
+}
+.end1:hover{
+  background-color: #131213d8;
+  color: #fff;
+  font-weight: bold;
+  width: 210px;
+}
 
 
+.followUS{
+  height: 420px;
+  width: 1260px;
+  line-height: 30px;
+  margin-top: 100px;
+  background-color: rgb(27, 10, 18);
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  font-size: larger; 
+  color: white; 
+  font-family: cursive;
+}
+
+.followUS a:hover{
+  background-color: #c94a96d8;
+  color: #fff;
+}
 
 
 
