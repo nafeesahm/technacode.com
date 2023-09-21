@@ -24,7 +24,7 @@
         }    
         
         #py,#html,#css,#js,#sql{
-        display: inline;
+        display: block;
         }
         
         #py{
@@ -78,31 +78,6 @@
         border:1px solid #000;
         text-align: center;
         line-height: 190px;
-        }
-        #py:hover{
-        background-color: rgb(201, 205, 204); 
-        border-radius: 10px;
-        font-size: xx-large;
-        }
-        #html:hover{
-        background-color: rgb(78, 161, 82); 
-        border-radius: 10px;
-        font-size: xx-large;
-        }
-        #css:hover{
-        background-color: rgb(242, 224, 60); 
-        border-radius: 10px;
-        font-size: xx-large;
-        }
-        #js:hover{
-        background-color: mediumaquamarine; 
-        border-radius: 10px;
-        font-size: xx-large;
-        }
-        #sql:hover{      
-        background-color: rgb(220, 229, 240); 
-        border-radius:10px;
-        font-size: xx-large;
         }
         
         .end{
