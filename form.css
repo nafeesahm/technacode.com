@@ -215,5 +215,8 @@ header li a{
   color: #fff;
 }
 
-
+.myprofile img{
+  margin-top: -50px;
+  margin-left: 20px;
+}
 
