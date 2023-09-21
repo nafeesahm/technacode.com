@@ -10,6 +10,72 @@
             }
 
     /* Example: Adjust padding or margins for smaller screens */
+        #img{
+            height: 50px;
+            width: 115px;
+            position: relative;
+            right: 20px;
+        }
+        #head{      
+            background-color: #fff;
+            width: 1263px;
+            position: fixed;
+            text-indent: -20px;
+            left: 0;  
+            right: 0;  
+            top: 0;  
+            height: 50px; 
+            line-height: 50px; 
+            align-items: center;  
+        }  
+        #head a{
+            color: #000;
+            font-weight: bolder;  
+            font-size: 16px;
+            position: relative;
+            bottom: 18px;
+            right: 10px;
+            padding: 13px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;  
+        }
+        #head a:hover{      
+            background-color: rgb(245, 236, 236); 
+            color: black;
+            font-size: 18px;
+        }
+        header#CourceHead{      
+            background: rgb(212, 91, 91);
+            width: 1263px;
+            position: fixed;  
+            left: 0px;   
+            right: 0px; 
+            top: 50px;    
+        } 
+        header * {  
+            display: inline;  
+        }  
+        header li a{  
+            margin: 20px; 
+            color: white; 
+            font-size: small;
+        } 
+        
+        #regi {
+            position: fixed;  
+            left: 1150px;    
+            top: 5px;  
+        } 
+        
+        .image-container img {
+            width: 1265px;
+            height: 500px;
+            margin-top: -15px;
+            margin-left: -40px;
+            
+        }
+
         #Intro1{
             background-color: wheat;
             border: 0px solid #000;
