@@ -10,33 +10,124 @@
             }
 
     /* Example: Adjust padding or margins for smaller screens */
-            .img1 {
-                width: 280px;
-            }
-            #head{        
-            height: 80px; 
-            align-items: start;  
-            }  
-
-            #CourceHead{        
-            height: fit-content;  
-            margin-top: 20px; 
-            } 
-
-            body{  
-            height: 130px;  
-            margin-top: 180px;  
-            padding: 30px;    
-            } 
-
-            #Intro1{
-            height: 1070px;
-            font-size: x-large;
-            padding-top: 50px;
-            }
-            
-            #py,#html,#css,#js,#sql{
-                height: 130px;
-                margin-left: 40px;
-            }
-    }
+        #Intro1{
+            background-color: wheat;
+            border: 0px solid #000;
+            color: #000;
+            font-size: medium;
+            text-align: center;
+            height: 200px;
+            width: 1264px;
+            margin-left: -40px;
+            margin-top: -5px;
+            padding-top: 20px;
+        }    
+        
+        #py,#html,#css,#js,#sql{
+        display: inline-block;
+        }
+        
+        #py{
+        height: 200px;
+        width: 250px;
+        font-size: large;
+        font-weight:bold;
+        background-color: rgb(157, 154, 149);  
+        border:1px solid #000;
+        text-align: center;
+        line-height: 190px;
+        }
+        
+        #html{
+        height: 200px;
+        width: 220px;
+        font-size: large;
+        font-weight:bold;
+        background-color: rgb(203, 171, 111);  
+        border:1px solid #000;
+        text-align: center;
+        line-height: 190px;
+        }
+        
+        #css{
+        height: 200px;
+        width: 220px;
+        font-size: large;
+        font-weight:bold;
+        background-color: rgb(247, 189, 82);  
+        border:1px solid #000;
+        text-align: center;
+        line-height: 190px;
+        }
+        #js{
+        height: 200px;
+        width: 250px;
+        font-size: large;
+        font-weight:bold;
+        background-color: rgb(153, 153, 153);  
+        border:1px solid #000;
+        text-align: center;
+        line-height: 190px;
+        }
+        #sql{
+        height: 200px;
+        width: 220px;
+        font-size: large;
+        font-weight:bold;
+        background-color: rgb(199, 202, 235);  
+        border:1px solid #000;
+        text-align: center;
+        line-height: 190px;
+        }
+        #py:hover{
+        background-color: rgb(201, 205, 204); 
+        border-radius: 10px;
+        font-size: xx-large;
+        }
+        #html:hover{
+        background-color: rgb(78, 161, 82); 
+        border-radius: 10px;
+        font-size: xx-large;
+        }
+        #css:hover{
+        background-color: rgb(242, 224, 60); 
+        border-radius: 10px;
+        font-size: xx-large;
+        }
+        #js:hover{
+        background-color: mediumaquamarine; 
+        border-radius: 10px;
+        font-size: xx-large;
+        }
+        #sql:hover{      
+        background-color: rgb(220, 229, 240); 
+        border-radius:10px;
+        font-size: xx-large;
+        }
+        
+        .end{
+        height: 250px;
+        width: 1263px;
+        display: block;
+        line-height: 150px;
+        background-color: rgb(76, 51, 56);
+        margin-left: -38px;
+        margin-top: -20px;
+        }
+        .end1{
+        height: 50px;
+        width: 200px;
+        border-radius: 5px;
+        line-height: 50px;
+        text-indent: 11px;
+        margin: auto;
+        background-color: rgb(40, 45, 201);  
+        }
+        .end1:hover{
+        background-color: #131213d8;
+        color: #fff;
+        font-weight: bold;
+        width: 210px;
+        }
+    
+}
