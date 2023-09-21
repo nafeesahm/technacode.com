@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>inaf india</title>
+    <script>
+        // Disable zooming via mouse scroll wheel
+        function disableMouseScroll(event) {
+            if (event.ctrlKey === true) {
+                event.preventDefault();
+            }
+        }
 
+        // Add an event listener to the document
+        document.addEventListener("wheel", disableMouseScroll, { passive: false });
+    </script>
     <style>    
         body{
             height: 125px;  

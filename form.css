@@ -18,6 +18,7 @@ a{
 }
 #head{      
   background-color: #fff;
+  width: 1263px;
   position: fixed;
   text-indent: -20px;
   left: 0;  
@@ -46,6 +47,7 @@ a{
 }
 header#CourceHead{      
   background: rgb(212, 91, 91);
+  width: 1263px;
   position: fixed;  
   left: 0px;   
   right: 0px; 
