@@ -41,10 +41,8 @@
 @keyframes abc{
     0%{
         transform: translateY(0px);
-        opacity: 0;
     }
     100%{
         transform: translateY(240px);
-        opacity: 1;
     }
 }
