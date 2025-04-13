@@ -1,6 +1,10 @@
 
-.image-container img {
+.image-container #mainImage {
     transition: transform 1.5s ease-in-out;
+}
+
+.image-container img[src="./picture_1.png"]{
+    width: 100%;
 }
 
 #Intro1 {
@@ -125,4 +129,10 @@
 }
 
 
+
+@media (max-width: 600px) {
+    #clist div {
+        min-width: 100%;
+    }
+}
 
