@@ -136,7 +136,7 @@
     }
 
     .image-container #mainImage {
-        width: 100%;
+        max-width: 70%;
         transition: transform 1.5s ease-in-out;
     }
 }
