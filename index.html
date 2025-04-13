@@ -105,7 +105,6 @@
         #clist div a {
             color: black;
             text-decoration: none;
-            font-weight: bold;
             font-size: 18px;
         }
 
@@ -116,16 +115,16 @@
 
         .end1 a {
             display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: rgb(50, 103, 201);
+            margin: 20px;
+            padding: 10px 30px;
+            background-color: rgb(58, 49, 82);
             border-radius: 10px;
             color: white;
             text-decoration: none;
         }
 
         .end1 a:hover{
-            background-color: rgb(97, 137, 218);
+            background-color: #cccccc;
             border-radius: 20px;
         }
 
@@ -212,6 +211,30 @@
         .testimonial-btns button:hover {
             background-color: rgba(0, 0, 0, 0.7);
         }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: left;
+            }
+
+            .logo {
+                height: 50px;
+            }
+
+            #Intro1 p, .testimonial-section p {
+                font-size: 14px;
+            }
+
+            #clist div {
+                min-width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -260,7 +283,7 @@
             <div class="end">
                 <h1 style="color: black;">Start For Free</h1>
                 <div class="end1">
-                    <a href="register.html">Start my career change</a>
+                    <a href="register.html">Register</a>
                 </div>
             </div>
         </div>
