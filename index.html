@@ -4,300 +4,347 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="form.css">
-    <link rel="stylesheet" href="animation.css">
-    <link rel="stylesheet" href="mobile.css">
+    <title>technacode.com</title>
+
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>inaf india</title>
-    <script>
-        // Disable zooming via mouse scroll wheel
-        function disableMouseScroll(event) {
-            if (event.ctrlKey === true) {
-                event.preventDefault();
-            }
+
+    <!-- Styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        // Add an event listener to the document
-        document.addEventListener("wheel", disableMouseScroll, { passive: false });
-    </script>
-    <style>    
-        body{
-            height: 125px;  
-            margin-top: 70px;  
-            padding: 30px;  
-            background-color: black; 
-            background-size: cover;  
-            font-family: sans-serif;  
-            }  
-        .dropbtn {
-            background-color:  rgb(212, 91, 91);
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f5f5;
             color: white;
-            padding: 10px;
-            font-size: 14px;
-            border: none;
-            cursor: pointer;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-            left: -40px;
-            }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #cbedf8;
-            min-width: 150px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            }  
-        .dropdown-content a {
-            color: black;
-            padding: 5px 16px;
+            padding: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+            background-color: #f7f5f5;
+            padding: 10px 20px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 5px 10px;
+        }
+
+        nav ul li a {
             text-decoration: none;
-            display: block;            
-            } 
-            
-        .dropdown-content a:hover {
-            background-color: #f7aaaa;
-            font-size: 16px;
-            }
+            color: black;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
 
-        .dropdown:hover .dropdown-content {
+        nav ul li a:hover {
+            background-color: #c5cce9;
+        }
+
+        .logo {
+            height: 100px;
+            margin-top: -30px;
+            margin-bottom: -30px;
+            object-fit: contain;
             display: block;
-            }
+        }
 
-        .dropdown:hover .dropbtn {
-            background-color: #3e8e41;
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: -17px 0;
+        }
+
+        #regi {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        #regi input {
+            padding: 10px 20px;
             font-size: 16px;
-            }            
-    </style> 
-</head>      
+            background-color: rgb(65, 196, 50);
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            color: white;
+        }
+
+        #Intro1 {
+            text-align: center;
+            margin-top: -20px;
+            padding: 30px;
+            background-color: #1a1a1a;
+            border-radius: 2px;
+        }
+
+        #Intro1 p {
+            margin: 20px 0;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        #clist {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        #clist div {
+            padding: 20px 30px;
+            background-color: #ddd;
+            border-radius: 10px;
+            transition: transform 0.2s ease-in-out;
+            text-align: center;
+            min-width: 150px;
+        }
+
+        #clist div:hover {
+            transform: scale(1.05);
+            background-color: #cccccc;
+        }
+
+        #clist div a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .end {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .end1 a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: rgb(127, 152, 197);
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .end1 a:hover{
+            background-color: rgb(97, 137, 218);
+            border-radius: 20px;
+        }
+
+        .followUS {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 14px;
+            color: black;
+        }
+
+        .fa {
+            padding: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            margin: 5px;
+            border-radius: 50%;
+            background-color: white;
+            color: black;
+        }
+
+        /* Testimonial Section */
+        #testimonials {
+            text-align: center;
+            margin-top: 50px;
+            padding: 40px;
+            background-color: #1a1a1a;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #testimonials h2 {
+            font-size: 28px;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+        .testimonial-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .testimonial {
+            margin-bottom: 20px;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            min-width: 300px;
+            margin-right: 20px;
+        }
+
+        .testimonial p {
+            font-size: 18px;
+            color: #ddd;
+            margin-bottom: 10px;
+        }
+
+        .testimonial span {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .testimonial-btns {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-500%);
+        }
+
+        .testimonial-btns button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .testimonial-btns button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
 
 <body>
-    <header id="head"> 
-        <nav>
-            <ul>
-                <li>
-                    <img id="img" src="./iNaf_logo.jpeg">  
-                </li>
-                 <li>
-                    <a href="index.html">Home</a>  
-                </li>  
-                <li>
-                    <a href="#Subjects">Subjects</a>  
-                </li>  
-                <li>
-                    <a href="#Jobs">Jobs</a>  
-                </li>  
-                <li>
-                    <a href="certificate.html">Get Certified</a>  
-                </li>  
-                <li>
-                    <a href="#join">Join Us</a>  
-                </li> 
-                
-            </ul>  
-        </nav>  
-    </header>
-
-    <header id="CourceHead"> 
-        <nav>  
-            <ul>  
-                <li>  
-                    <div class="dropdown">
-                        <button class="dropbtn">Web Development</button>
-                        <div class="dropdown-content">
-                            <a href="#">HTML</a>
-                            <a href="#">CSS</a>
-                            <a href="#">JavaScript</a>
-                            <a href="#">jQuery</a>
-                            <a href="#">BootStrap</a>
-                            <a href="#">Python</a>
-                            <a href="#">Django</a>
-                        </div>
-                    </div>  
-                </li>  
-                <li>  
-                    <div class="dropdown">
-                        <button class="dropbtn">Data Analysis</button>
-                        <div class="dropdown-content">
-                            <a href="#">Statistics</a>
-                            <a href="#">Python</a>
-                            <a href="./Numpy.ipynb">Numpy</a>
-                            <a href="./pandas.ipynb">Pandas</a>
-                            <a href="./matplotlib.ipynb">MatPlotlib</a>
-                            <a href="./seaborn.ipynb">Seaborn</a>
-                            <a href="#">Excel</a>
-                        </div>
-                    </div>  
-                </li>  
-                <li>  
-                    <div class="dropdown">
-                        <button class="dropbtn">Data Science</button>
-                        <div class="dropdown-content">
-                            <a href="./Numpy.ipynb">Numpy</a>
-                            <a href="./pandas.ipynb">Pandas</a>
-                            <a href="./matplotlib.ipynb">matplotlib</a>
-                            <a href="./seaborn.ipynb">Seaborn</a>
-                            <a href="#">Machine Learning</a>
-                        </div>
-                    </div>                
-                </li> 
-                <li>  
-                    <div class="dropdown">
-                        <button class="dropbtn">Machine Learning</button>
-                        <div class="dropdown-content">
-                            <a href="#">Data Science Tool kit</a>
-                            <a href="#">Statistics & Exploratory Data Analytics</a>
-                            <a href="#">Supervised Learning</a>
-                            <a href="#">UnSupervised Learning</a>
-                            <a href="#">Reinforcement Learning</a>
-                            <a href="#">Deployment and Capstone Project</a>
-                        </div>
-                    </div>                
-                </li>
-                <li> 
-                    <div class="dropdown">
-                        <button class="dropbtn">Artificial Intelligence</button>
-                        <div class="dropdown-content">
-                            <a href="#">Machine Learning</a>
-                            <a href="#">Deep learning</a>
-                            <a href="#">Natural Language Processing</a>
-                            <a href="#">Face Detection</a>
-                            <a href="#">Sentiment Analyzer</a>
-                            <a href="#">TensorFlow and Neural Network</a>
-                        </div>
-                    </div>                
-                </li>  
-                <li>  
-                    <div class="dropdown">
-                        <button class="dropbtn">Big Data</button>
-                        <div class="dropdown-content">
-                            <a href="#">VM Ware Tool kit</a>
-                            <a href="#">Hadoop</a>
-                            <a href="#">Hive</a>
-                            <a href="#">HBase</a>
-                            <a href="#">Apache Pig</a>
-                            <a href="#">Spark & PySpark</a>
-                            <a href="#">Skoop</a>
-                        </div>
-                    </div>                
-                </li>                
-                <li>  
-                    <div class="dropdown">
-                        <button class="dropbtn">Databases</button>
-                        <div class="dropdown-content">
-                            <a href="#">MySQL</a>
-                            <a href="#">SQL Server Management Studio</a>
-                            <a href="#">MongoDB</a>
-                            <a href="#">PostgreSQL</a>
-                            <a href="#">Oracle RDBMS</a>
-                            <a href="#">Salesforce</a>
-                            <a href="#">DevOps</a>
-                        </div>
-                    </div>                
-                </li>
- 
-            </ul>  
-        </nav>  
-    </header>
+    <nav>
+        <ul>
+            <li style="flex: 1;"><img class="logo" src="./technacode_logo.png" alt="Technacode Logo"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./giphy.gif">Subjects</a></li>
+            <li><a href="./giphy.gif">Jobs</a></li>
+            <li><a href="certificate.html">Get Certified</a></li>
+            <li><a href="./giphy.gif">Join Us</a></li>
+        </ul>
+    </nav>
 
     <div id="regi">
-        <a href="register.html">
-            <input type="submit" name="sub" value="Log in"
-            style="height: 40px; width: 100px; font-size: 1.3em; font-weight: bold;
-            border-radius: 20px;  background: rgb(65, 196, 50);">
-        </a>
-    </div>
- 
-    <div class="image-container">
-        <img src="./DataScience.jpg" alt="please wait...">
+        <a href="register.html"><input type="submit" name="sub" value="Log in"></a>
     </div>
 
-    <div id="Intro1">
-        <p class="p1">
-        <p style="font-weight: 900; font-size: xx-large;"><u>My Learning</u></p>
-        <br>
-        Track your progress with our free "My Learning" program.
-        <br>
-        Log in to your account, and start earning points!    
-        <br><br>    
-        This website is usefull for learning of Technology.<br>
-        You can learn from basic level to advance label of programming languages and front-end technology.<br>
-        Also, you can learn data science and databases, i.e., (MongoDB, SQL)<br><br>
-        <b>Note: First you have to register yourself to learn the technology.</b>
-        <br><br>
-
-        Select Your Cource From  Below List...👇    
+    <div id="Intro1" class="container">
+        <H1 style="color: rgb(132, 160, 184); font-size: 70px; font-family: 'Times New Roman', Times, serif;">Technacode</H1>
+        <div class="image-container">
+            <img src="./DataScience.jpg" alt="Data Science Banner" style="height: 500px;">
+        </div>
+        <p>
+            <strong><u>My Learning</u></strong><br><br>
+            Track your progress with our free "My Learning" program. Log in to your account, and start earning points!<br><br>
+            Learn from the basics to advanced topics in programming, data science, and database systems like MongoDB and SQL. Our courses are designed for absolute beginners and professionals who want to sharpen their skills.<br><br>
+            Our Technology courses include hands-on projects, real-world scenarios, and up-to-date content. We offer comprehensive learning in Python, Web Development (HTML, CSS, JavaScript), Data Science, SQL, and more.<br><br>
+            Our curriculum is continuously updated with the latest industry trends and best practices to ensure you're job-ready. Whether you're aiming for a role in web development, data analytics, or backend programming, Technacode has a course tailored for you.<br><br>
+            <strong>Note: Register first to access learning materials and track your course progress.</strong><br><br>
+            Select your course from the list below 👇
         </p>
-    </div>
+
+        <div id="clist">
+            <div><a href="python.html" title="Click here to learn python">Python</a></div>
+            <div><a href="HTML_page.html" title="Click here to learn HTML">HTML</a></div>
+            <div><a href="CSS_page.html" title="Click here to learn CSS">CSS</a></div>
+            <div><a href="javascript.html" title="Click here to learn JavaScript">JavaScript</a></div>
+            <div><a href="sql.html" title="Click here to learn SQL">SQL</a></div>
+        </div>
     
-    </div id="clist">
-        <div id="py">
-            <a href="python.html"><span title="Click here to learn python"   style="color: black;">Python</span></a>
+        <div class="end">
+            <h1 style="color: white;">Start For Free</h1>
+            <div class="end1">
+                <a href="register.html">Start my career change</a>
+            </div>
         </div>
-        
-        <div id="html">
-            <a href="HTML_page.html"><span title="Click here to learn HTML" style="color: black;">HTML</span></a>
-        </div>
-        
-        <div id="css">
-            <a href="CSS_page.html"><span title="Click here to learn CSS"style="color: black;">CSS</span></a>
-        </div>
-        
-        <div id="js">
-            <a href="javascript.html"><span title="Click here to learn JavaScript" style="color: black;">Java Script</span></a>
-        </div>
-        
-        <div id="sql">
-            <a href="sql.html"><span title="Click here to learn SQL" style="color: black;">SQL</span></a>
-        </div>     
     </div>
 
-    <div class="end">
-        <div>
-            <h1 style="color: white;" align="center">Start For Free</h1>
-        </div>    
-
-        <div class="end1">            
-            <a href="register.html"><span style="font-size: 16px; font-family: cursive; color: white;">Start my career change</span></a>
-        </div>    
+    <div class="image-container">
+        <img src="./picture_1.png" alt="Data Science Banner">
     </div>
 
-    <div class="common green">N</div>
-    <div class="common red">A</div>
-    <div class="common blue">F</div>
-    <div class="common yellow">E</div>   
-    <div class="common magenta">E</div> 
-    <div class="common brown">S</div>
-
+    <div id="testimonials">
+        <h2>What Our Learners Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"Technacode made learning programming so easy and enjoyable. The courses are structured perfectly for beginners, and the hands-on projects helped me build real skills."</p>
+                <span>- Sarah khan.</span>
+            </div>
+            <div class="testimonial">
+                <p>"I was able to transition into a data analyst role after completing Technacode's Data Science course. The content is always up-to-date, and the instructors are really supportive."</p>
+                <span>- Junaid Ali.</span>
+            </div>
+            <div class="testimonial">
+                <p>"As a web developer, I was looking to improve my skills in JavaScript and CSS. Technacode's courses provided clear, actionable content that helped me become a better developer."</p>
+                <span>- Keshav.</span>
+            </div>
+            <div class="testimonial">
+                <p>"The Python course was so comprehensive, and I appreciated the practical assignments. It helped me not only learn Python but also apply it to real-world projects."</p>
+                <span>- Johny saini.</span>
+            </div>
+            <div class="testimonial">
+                <p>"I completed the SQL course, and it completely changed my career trajectory. I now work as a database administrator, thanks to the skills I acquired through Technacode."</p>
+                <span>- Rachel P.</span>
+            </div>
+            <div class="testimonial">
+                <p>"Technacode's platform made learning web development fun! The HTML, CSS, and JavaScript modules were engaging, and the instructors were very responsive."</p>
+                <span>- Prince.</span>
+            </div>
+        </div>
+    </div>
 
     <div class="followUS">
-        <center>
-            <p><b>Follow us:</b></p>  
-            
-            <!-- Add font awesome icons -->
-            <a href="http://www.benateck.blogspot.com" target="_blank" style="color: rgb(63, 229, 58);">My_Blog</a><br><br>
-            <a href="http://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
-            <a href="http://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
-            <a href="http://www.youtube.com" class="fa fa-youtube" target="_blank"></a>    
-        </center>
-
-        <center style="font-size: small; color: white;"">        
-            <p>iNaf is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using iNaf, you agree to have read and accepted our terms of use, cookie and privacy policy.<br><br>
-                    
-            © Copyright 2022-2023.
-            www.inaf.com. All rights reserved. inaf is powered by Nafees.</p>
-            </p>
-
-        </center>
-
-        <div class="myprofile">
-                <img src="/Nafees.jpeg" height="120px" width="130px">
-        </div>
+        <p><strong>Follow us:</strong></p>
+        <a href="http://www.benateck.blogspot.com" target="_blank">My_Blog</a><br><br>
+        <a href="http://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+        <a href="http://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+        <a href="http://www.youtube.com" class="fa fa-youtube" target="_blank"></a><br><br>
+        <p>
+            Technacode is optimized for learning and training. Examples may be simplified to improve clarity. <br>
+            © 2022-2023 technacode.com. All rights reserved. Powered by Nafees.
+        </p>
     </div>
- 
+
+    <script>
+        let testimonialIndex = 0;
+
+        function showTestimonials() {
+            const testimonials = document.querySelectorAll('.testimonial');
+            const totalTestimonials = testimonials.length;
+            let slidePosition = -testimonialIndex * (testimonials[0].offsetWidth + 20); // 20px for margin-right
+            document.querySelector('.testimonial-container').style.transform = `translateX(${slidePosition}px)`;
+        }
+
+        function nextTestimonial() {
+            const totalTestimonials = document.querySelectorAll('.testimonial').length;
+            testimonialIndex = (testimonialIndex + 1) % totalTestimonials;
+            showTestimonials();
+        }
+
+        // Auto-slide testimonials every 5 seconds
+        setInterval(nextTestimonial, 5000);
+
+        // Initial testimonial display
+        showTestimonials();
+    </script>
 </body>
 
 </html>
