@@ -134,5 +134,10 @@
     #clist div {
         min-width: 100%;
     }
+
+    .image-container #mainImage {
+        width: 100%;
+        transition: transform 1.5s ease-in-out;
+    }
 }
 
