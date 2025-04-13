@@ -212,6 +212,14 @@
             background-color: rgba(0, 0, 0, 0.7);
         }
 
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+            color: black;
+        }
+
         @media (max-width: 600px) {
             .menu-toggle {
                 display: block;
@@ -234,6 +242,7 @@
 
             .logo {
                 height: 50px;
+                margin-left: 120px;
             }
 
             #Intro1 p,
@@ -250,13 +259,14 @@
 
 <body>
     <nav>
-        <ul>
-            <li style="flex: 1;"><img class="logo" src="./technacode_logo.png" alt="Technacode Logo"></li>
+        <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+        <ul id="navList">
+            <li><img class="logo" src="./technacode_logo.png" alt="Technacode Logo"></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="./giphy.gif">Subjects</a></li>
-            <li><a href="./giphy.gif">Jobs</a></li>
+            <li><a href="#Subjects">Subjects</a></li>
+            <li><a href="#Jobs">Jobs</a></li>
             <li><a href="certificate.html">Get Certified</a></li>
-            <li><a href="./giphy.gif">Join Us</a></li>
+            <li><a href="#join">Join Us</a></li>
         </ul>
     </nav>
 
@@ -341,7 +351,7 @@
         <a href="http://www.youtube.com" class="fa fa-youtube" target="_blank"></a><br><br>
         <p>
             Technacode is optimized for learning and training. Examples may be simplified to improve clarity. <br>
-            © 2022-2023 technacode.com. All rights reserved. Powered by Nafees.
+            © 2024-2025 technacode.com. All rights reserved. Powered by technacode.
         </p>
     </div>
 
@@ -354,6 +364,11 @@
                 image.style.transform = 'scale(1)';
             }, 1000);
         }, 5000);
+
+        // Toggle mobile nav menu
+        function toggleMenu() {
+            document.getElementById('navList').classList.toggle('show');
+        }
     </script>
 </body>
 
