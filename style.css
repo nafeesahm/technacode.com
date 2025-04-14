@@ -1,5 +1,6 @@
 
 .image-container #mainImage {
+    height: 350px;
     transition: transform 1.5s ease-in-out;
 }
 

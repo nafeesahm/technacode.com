@@ -1,144 +1,173 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="form.css">
-    <link rel="stylesheet" href="mobile.css">
-    <title>Registration Form</title>
-
-    <style type=text/css>   
-    body   
-        {  
-        height: 125vh;  
-        margin-top: 10px;  
-        padding: 30px;  
-        background-size: cover;  
-        font-family: sans-serif;  
-        }
-
-    .form_1{
-        display:block;
-        padding: 1em;
-        margin: 1em;
-        border: 3px solid rgb(57, 8, 8);
-        background-color: rgb(237, 195, 195);
-        max-width: 2000px;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #4f1a1a;
+      font-family: sans-serif;
     }
-    .size{
-        display:block;
-        padding: 1em;
-        margin: 2em;
-        border: 3px solid #ddd;
-        background-color: #eee;
-        max-width: 1500px;
-    }    
-    input{
-        height: 1.5em;
-        width: 200px;
+    .form-container {
+      background-color: #f8d7da;
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 2rem auto;
+      max-width: 700px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
     }
-    </style>
-     
+    .form-title {
+      color: white;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    label {
+      font-weight: 600;
+    }
+  </style>
 </head>
+<body>
+  
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3 sticky-top">
+    <!-- Logo added before the Technacode text -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./technacode_logo.png" alt="Technacode Logo" class="logo-small me-2" style="height: 40px;">
+        <span>Technacode</span>
+    </a>
 
-<body style="background-color: rgb(79, 26, 26)">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <header id="head"> 
-        <nav>
-            <ul>
-                <li>
-                    <img id="img" src="./iNaf_logo.jpeg">  
-                </li>
-                <li>
-                    <a href="index.html">Home</a>  
-                </li>  
-                <li>
-                    <a href="#list">Cources</a>  
-                </li>  
-                <li>
-                    <a href="#services">Services</a>  
-                </li>  
-                <li>
-                    <a href="certificate.html">Get Certified</a>  
-                </li>  
-                <li>
-                    <a href="#join">Join Us</a>  
-                </li>  
-            </ul>  
-        </nav>  
-    </header>
-    <div style="margin: 20px; height: 20px;">
-        <h1 style="color: #fff;"><u>Registration Form</u></h1>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav bg-dark">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Subjects">Subjects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Jobs">Jobs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="certificate.html">Get Certified</a>
+            </li>
+
+            <!-- Dropdown Menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                    <li><a class="dropdown-item" href="#">Services</a></li>
+                    <li><a class="dropdown-item" href="#">About</a></li>
+                </ul>
+            </li>
+
+            <!-- Register Button -->
+            <li class="nav-item">
+                <a class="nav-link btn btn-primary ms-2 active" href="register.html">Register</a>
+            </li>
+        </ul>
     </div>
+  </nav>
 
-    <div class="form_1">
-        <h2 style="color: black;">All Fields are Mandatory</h2>
+  <h1 class="form-title"><u>Registration Form</u></h1>
 
-        <form class="size" action="thankyou.html">
-            <label for="name">Name:</label>
-            <input id="name" type="text" name="name" placeholder="full name" required>
-            <br><br>
-            <label for="mail">Email:</label>
-            <input id="mail" type="email" name="mail" placeholder="abc@gmail.com" required>
-            <br><br>
-            <label for="num">Contact no: +91 </label>
-            <input id="num" type="number" name="num" placeholder="9876543210" required>
+  <div class="container form-container">
+    <h3 class="text-center text-dark mb-4">All Fields are Mandatory</h3>
+    <form action="thankyou.html">
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input id="name" type="text" class="form-control" placeholder="Full Name" required />
+      </div>
 
-            <br>
+      <div class="mb-3">
+        <label for="mail" class="form-label">Email</label>
+        <input id="mail" type="email" class="form-control" placeholder="abc@gmail.com" required />
+      </div>
 
-            <h3>Please Choose your cource:</h3>
-            <select class="" name="expe">
-                <option value="Python">Python</option>
-                <option value="HTML">HTML</option>
-                <option value="CSS">CSS</option>
-                <option value="JAva Script">JAva Script</option>
-                <option value="jQuery">jQuery</option>
-                <option value="DJango">DJango</option>
-                <option value="Decipher Tool XML">Decipher Tool XML</option>
-                <option value="Data Analysis">Data Analysis</option>
-                <option value="Machine Learning">Machine Learning</option>
-                <option value="Data Science">Data Science using Python</option>
-                <option value="Statics For Data Science">Statics For Data Science</option>
-                <option value="Ms Excel">Ms Excel</option>
-                <option value="Power BI / Tablue">Power BI / Tablue</option>
-            </select>
-        
-            <h3>Your Qualification:</h3>
-            <select class="" name="Qualification">
-                <option value="1">10th</option>
-                <option value="2">12th</option>
-                <option value="3">Graduate</option>
-                <option value="4">Post Graduate</option>
-                <option value="5">Other</option>
-            </select>
+      <div class="mb-3">
+        <label for="num" class="form-label">Contact Number</label>
+        <input id="num" type="tel" class="form-control" placeholder="9876543210" pattern="[0-9]{10}" required />
+      </div>
 
-            <h3>Enter your College Name:</h3>
-            <textarea name="pref" cols="40" placeholder="write here"></textarea>
-            <br>
+      <div class="mb-3">
+        <label class="form-label">Choose Your Course</label>
+        <select name="course" class="form-select" required>
+          <option selected disabled>-- Select Course --</option>
+          <option>Python</option>
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>JavaScript</option>
+          <option>jQuery</option>
+          <option>Django</option>
+          <option>Decipher Tool XML</option>
+          <option>Data Analysis</option>
+          <option>Machine Learning</option>
+          <option>Data Science using Python</option>
+          <option>Statistics For Data Science</option>
+          <option>Ms Excel</option>
+          <option>Power BI / Tableau</option>
+        </select>
+      </div>
 
-            <h3>Have you any Experience:</h3>
-            <label for="e1">Yes</label>
-            <input id="e1" type="radio" name="experience" value="yes">
-            <br>
-            <label for="e2">No</label>
-            <input id="e2" type="radio" name="experience" value="no">
-            <br>
-            <label for="e3">Fresher</label>
-            <input id="e3" type="radio" name="experience" value="fresher">
+      <div class="mb-3">
+        <label class="form-label">Qualification</label>
+        <select name="qualification" class="form-select" required>
+          <option selected disabled>-- Select Qualification --</option>
+          <option>10th</option>
+          <option>12th</option>
+          <option>Graduate</option>
+          <option>Post Graduate</option>
+          <option>Other</option>
+        </select>
+      </div>
 
-            <h3>Your Preferences Extra Information-</h3>
-            <textarea name="pref" rows="6" cols="40" placeholder="write here"></textarea>
-            <br>
-            <br>   
-            <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
-            <input id="checkbox" type="checkbox" required/>
-        
-            <input type="submit" name="sub" value="Submit" style="height: 2em; width: 5em; border-radius: 25px; font-size: 1.5em; background-color: rgb(65, 196, 50); font-weight: bolder;">
+      <div class="mb-3">
+        <label class="form-label">College Name</label>
+        <textarea name="college" class="form-control" rows="2" placeholder="Write here..." required></textarea>
+      </div>
 
-        </form>
-    </div>
-    <br><br><br>
+      <div class="mb-3">
+        <label class="form-label">Experience</label><br />
+        <div class="form-check form-check-inline">
+          <input type="radio" id="expYes" name="experience" value="yes" class="form-check-input" required>
+          <label for="expYes" class="form-check-label">Yes</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="radio" id="expNo" name="experience" value="no" class="form-check-input">
+          <label for="expNo" class="form-check-label">No</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="radio" id="expFresher" name="experience" value="fresher" class="form-check-input">
+          <label for="expFresher" class="form-check-label">Fresher</label>
+        </div>
+      </div>
 
+      <div class="mb-3">
+        <label class="form-label">Any Preferences or Extra Info</label>
+        <textarea name="pref" class="form-control" rows="4" placeholder="Write here..."></textarea>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="terms" required>
+        <label class="form-check-label" for="terms">I agree to these <a href="#">Terms and Conditions</a>.</label>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-success px-4 py-2">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
