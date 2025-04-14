@@ -18,16 +18,10 @@
     <script src="./testimonial.js" defer></script>
     <!-- Styles -->
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f7f5f5;
-            color: black;
+            background-color: black;
+            color: white;
         }
     </style>
 </head>
@@ -128,6 +122,29 @@
         </div>
     </main>
 
+    <div class="mb-0 pb-5" style="width: auto; background-color: black; color: white;">
+        <div class="row g-0">
+            <div class="col-md-3">
+                <img src="./Nafees_pic.jpg" style="margin-top: 55px;" class="img-fluid rounded-start" alt="Loading...">
+            </div>
+            <div class="col-md-9 mt-5">
+                <div class="card-body">
+                    <h4 class="card-title">Welcome to Technacode – Your Gateway to Tech Learning and Career Growth!</h4>
+                    <p class="card-text mt-3">Technacode is a dynamic platform designed for students, professionals, and tech enthusiasts who want to enhance their skills, stay updated with industry trends, and unlock new career opportunities. Whether you're diving into new subjects, exploring job openings, or getting certified to boost your resume, Technacode is here to support your journey.</p>
+                    <h3>🚀 Why Choose Technacode?</h3>
+                        <ul>
+                          <li>📚 <strong>Easy-to-follow content</strong> on trending tech topics to help you stay ahead.</li>
+                          <li>🛠 <strong>Hands-on skills</strong> that prepare you for real-world challenges.</li>
+                          <li>🎓 <strong>Certification programs</strong> to boost your resume and credibility.</li>
+                          <li>📢 <strong>Job listings and hiring support</strong> to connect you with your dream career.</li>
+                          <li>🌍 <strong>A thriving community</strong> of learners and mentors to support your growth.</li>
+                        </ul>
+                    <p class="card-text">At Technacode, we believe learning should be accessible, engaging, and practical. Join us today and start your path to becoming a confident, job-ready tech professional.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="testimonials">
         <h2>What Our Learners Say</h2>
         <div class="testimonial-container">
@@ -159,7 +176,7 @@
     </div>
 
     <div class="followUS">
-        <p><strong>Follow us:</strong></p>
+        <p><strong><h4>Follow us:</h4></strong></p>
         <a href="http://www.benateck.blogspot.com" target="_blank">My_Blog</a><br><br>
         <a href="http://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
         <a href="http://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
@@ -176,7 +193,7 @@
         // Animate image with scale effect every few seconds
         const image = document.getElementById('mainImage');
         setInterval(() => {
-            image.style.transform = 'scale(1.3)';
+            image.style.transform = 'scale(1.2)';
             setTimeout(() => {
                 image.style.transform = 'scale(1)';
             }, 1000);
