@@ -2,6 +2,7 @@
 .image-container #mainImage {
     height: 350px;
     transition: transform 1.5s ease-in-out;
+    margin-top: 30px;
 }
 
 .image-container img[src="./picture_1.png"]{
@@ -10,7 +11,7 @@
 
 #Intro1 {
     text-align: center;
-    background-color: rgb(104, 149, 177);
+    background-color: rgb(104, 149, 179);
     border-radius: 2px;
 }
 
