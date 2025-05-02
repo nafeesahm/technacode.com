@@ -1,20 +1,37 @@
-let testimonialIndex = 0;
+document.addEventListener('DOMContentLoaded', () => {
+  const testimonials = document.querySelectorAll('#testimonials .testimonial');
+  const prevBtn = document.querySelector('#testimonials .prev-btn');
+  const nextBtn = document.querySelector('#testimonials .next-btn');
+  let index = 0;
 
-function showTestimonials() {
-    const testimonials = document.querySelectorAll('.testimonial');
-    const totalTestimonials = testimonials.length;
-    let slidePosition = -testimonialIndex * (testimonials[0].offsetWidth + 20); // 20px for margin-right
-    document.querySelector('.testimonial-container').style.transform = `translateX(${slidePosition}px)`;
-}
+  function updateSlider() {
+    testimonials.forEach((t, i) => {
+      if (i === index) {
+        t.style.display = 'block';
+        t.classList.add('active');
+      } else {
+        t.style.display = 'none';
+        t.classList.remove('active');
+      }
+    });
+  }
 
-function nextTestimonial() {
-    const totalTestimonials = document.querySelectorAll('.testimonial').length;
-    testimonialIndex = (testimonialIndex + 1) % totalTestimonials;
-    showTestimonials();
-}
+  prevBtn.addEventListener('click', () => {
+    index = (index - 1 + testimonials.length) % testimonials.length;
+    updateSlider();
+  });
 
-// Auto-slide testimonials every 5 seconds
-setInterval(nextTestimonial, 5000);
+  nextBtn.addEventListener('click', () => {
+    index = (index + 1) % testimonials.length;
+    updateSlider();
+  });
 
-// Initial testimonial display
-showTestimonials();
+  // Auto slide every 5 seconds (adjust as needed)
+  setInterval(() => {
+    index = (index + 1) % testimonials.length;
+    updateSlider();
+  }, 5000);  // Adjust the time to change testimonials
+
+  // Initialize the first testimonial
+  updateSlider();
+});

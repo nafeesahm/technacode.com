@@ -1,128 +1,142 @@
 
-.image-container #mainImage {
-    height: 350px;
-    transition: transform 1.5s ease-in-out;
-    margin-top: 30px;
-}
-
-.image-container img[src="./img/picture_1.png"]{
+/* ======== Global Styles ======== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #687996;
+    color: white;    
+  }
+  
+  /* ======== Image Styling ======== */
+  .image-container img {
     width: 100%;
-}
-
-#Intro1 {
-    text-align: center;
-    background-color: rgb(144, 143, 177);
-    border-radius: 2px;
-}
-
-#Intro1 p {
-    margin: 50px 0;
-    line-height: 1.8;
-    font-size: 18px;
-}
-
-#clist {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-#clist div {
-    padding: 20px 30px;
-    background-color: #ddd;
-    border-radius: 10px;
-    transition: transform 0.2s ease-in-out;
-    text-align: center;
-    min-width: 150px;
-}
-
-#clist div:hover {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  /* ======== Buttons ======== */
+  a.btn {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  a.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  }
+  
+  /* ======== Section Headers ======== */
+  .section-header h3 {
+    margin-bottom: 0.3rem;
+    color: #0d6efd;
+  }
+  
+  .section-header p {
+    margin-bottom: 1rem;
+  }
+  
+  /* ======== Register Button ======== */
+  .btn-register {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-register:hover {
     transform: scale(1.05);
-    background-color: #cccccc;
-}
+    box-shadow: 0 10px 20px rgba(0,128,0,0.3);
+  }
+  
+  /* ======== Responsive Tweaks ======== */
+  @media (max-width: 768px) {
+    .image-container img {
+      max-height: 250px;
+    }
+  
+    a.btn {
+      padding: 10px !important;
+      font-size: 0.9rem;
+    }
+  
+    h2, h3 {
+      font-size: 1.4rem;
+    }
+  }
+  
 
-#clist div a {
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-}
 
-.end {
-    margin-top: 40px;
-    text-align: center;
-}
 
-.end1 a {
-    display: inline-block;
-    margin: 20px;
-    padding: 10px 30px;
-    background-color: rgb(58, 49, 82);
-    border-radius: 10px;
-    color: white;
-    text-decoration: none;
-}
 
-.end1 a:hover{
-    background-color: #084b77;
-    border-radius: 20px;
-}
+
+
+
+
+
+
 
 /* Testimonial Section */
 #testimonials {
     text-align: center;
-    margin-top: 0px;
     padding: 40px;
     background-color: #222;
     position: relative;
     overflow: hidden;
-}
-
-#testimonials h2 {
-    margin-top: 25px;
+  }
+  
+  #testimonials h2 {
     font-size: 25px;
     color: #fff;
     margin-bottom: 30px;
-}
-
-.testimonial-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.testimonial {
-    margin-bottom: 20px;
+  }
+  
+  /* Single‐slide styling */
+  .testimonial {
+    display: none;               /* hidden by default; JS will show the one at `index` */
     background-color: #222;
-    padding: 20px;
+    padding: 10px 80px 20px 80px;;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     text-align: left;
-    min-width: 300px;
-    margin-right: 20px;
-}
-
-.testimonial p {
+  }
+  
+  .testimonial.active {
+    display: block;              /* only the “active” one is shown */
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.5);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .testimonial p {
     font-size: 18px;
     color: #ddd;
     margin-bottom: 10px;
-}
-
-.testimonial span {
+  }
+  
+  .testimonial span {
     font-weight: bold;
     color: #fff;
-}
+  }
+  
+  /* Prev/Next buttons */
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev-btn { left: 10px; }
+  .next-btn { right: 10px; }
+  
 
-.followUS {
-    margin-top: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    font-size: 14px;
-    color: white;
-    background-color: #222;
-}
 
+  
+
+/* ======== Footer ======== */
 .fa {
     padding: 10px;
     font-size: 20px;
@@ -134,14 +148,6 @@
 }
 
 
-@media (max-width: 600px) {
-    #clist div {
-        min-width: 100%;
-    }
 
-    .image-container #mainImage {
-        max-width: 80%;
-        transition: transform 1.5s ease-in-out;
-    }
-}
+
 

@@ -18,11 +18,17 @@
     <script src="./testimonial.js" defer></script>
     <!-- Styles -->
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: black;
-            color: white;
+        
+        #typedText::after {
+        content: "|";
+        animation: blink 1s infinite;
+        color: white;
         }
+      
+        @keyframes blink {
+          0%, 50%, 100% { opacity: 1; }
+          25%, 75% { opacity: 0; }
+        }        
     </style>
 </head>
 
@@ -79,87 +85,163 @@
         </div>
     </nav>
 
-    <!--Technacode-->
-    <section id="home" class="hero-section text-center py-3">
+    <!-- Technacode Hero Section -->
+    <section id="home" class="hero-section text-center py-5" style="background: linear-gradient(to right, #1c1f26, #2f3b50); color: white;">
         <div class="container">
-            <div style="text-align: center; rgb(120, 143, 164); font-size: 50px; font-family: 'Times New Roman', Times, serif;">Technacode</div>
-            <a href="#clist" class="btn btn-outline-success btn-outline-success mt-3">Explore Our Services</a>
+          <h1 class="display-4 fw-bold mb-3" style="font-family: 'Times New Roman', Times, serif;">Technacode</h1>
+          <p class="lead mb-4">
+            <span id="typedText"></span>
+          </p>
+          <a href="#clist" class="btn btn-outline-light btn-lg">Explore Our Services</a>
         </div>
     </section>
 
     <!-- Main Content Section -->
     <main class="container my-5">
-        <div id="Intro1">
-            <div class="image-container">
-                <img id="mainImage" src="./img/DataScience.jpg">
-            </div>
-            <p>
-                Track your progress with our free "My Learning" program. Log in to your account, and start earning points!<br><br>
-                Learn from the basics to advanced topics in programming, data science, and database systems like MongoDB and SQL. Our courses are designed for absolute beginners and professionals who want to sharpen their skills.<br><br>
-                Our Technology courses include hands-on projects, real-world scenarios, and up-to-date content. We offer comprehensive learning in Python, Web Development (HTML, CSS, JavaScript), Data Science, SQL, and more.<br><br>
-                Our curriculum is continuously updated with the latest industry trends and best practices to ensure you're job-ready. Whether you're aiming for a role in web development, data analytics, or backend programming, Technacode has a course tailored for you.<br><br>
-                <strong>Note: Register first to access learning materials and track your course progress.</strong><br><br>
-                Select your course from the list below 👇
-            </p>
 
-            <div id="clist">
-                <div><a href="https://technacode.blogspot.com/2021/09/materia-introduction-python-is-general.html" title="Click here to learn python">Python</a></div>
-                <div><a href="HTML_page.html" title="Click here to learn HTML">HTML</a></div>
-                <div><a href="CSS_page.html" title="Click here to learn CSS">CSS</a></div>
-                <div><a href="javascript.html" title="Click here to learn JavaScript">JavaScript</a></div>
-                <div><a href="sql.html" title="Click here to learn SQL">SQL</a></div>
-            </div>
-        
-            <div class="end">
-                <h1 style="color: black;">Start For Free</h1>
-                <div class="end1">
-                    <a href="./register.html">Register</a>
+        <div class="container-fluid py-5" style="background-color: #687996; color: #000;">
+            <div class="row align-items-center gx-5">
+              <!-- Image Column -->
+              <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                <img src="./img/ChatGPT_Image.png" alt="Technacode AI" class="img-fluid rounded shadow" style="max-height: 300px;">
+              </div>
+          
+              <!-- Text Column -->
+              <div class="col-lg-8">
+                <div class="card-body px-2 px-md-4">
+                  <h2 class="fw-bold mb-3">Welcome to Technacode – Your Gateway to Tech Learning and Career Growth!</h2>
+          
+                  <p class="mb-4">Technacode is a dynamic platform designed for students, professionals, and tech enthusiasts who want to enhance their skills, stay updated with industry trends, and unlock new career opportunities.</p>
+          
+                  <h4 class="fw-semibold mb-3">🚀 Why Choose Technacode?</h4>
+                  <ul class="ps-3">
+                    <li class="mb-2">📚 <strong>Easy-to-follow content</strong> on trending tech topics to help you stay ahead.</li>
+                    <li class="mb-2">🛠 <strong>Hands-on skills</strong> that prepare you for real-world challenges.</li>
+                    <li class="mb-2">🎓 <strong>Certification programs</strong> to boost your resume and credibility.</li>
+                    <li class="mb-2">📢 <strong>Job listings and hiring support</strong> to connect you with your dream career.</li>
+                    <li class="mb-2">🌍 <strong>A thriving community</strong> of learners and mentors to support your growth.</li>
+                  </ul>
+          
+                  <p class="mt-4">At Technacode, we believe learning should be accessible, engaging, and practical. <strong>Join us today</strong> and start your path to becoming a confident, job-ready tech professional.</p>
                 </div>
+              </div>
             </div>
         </div>
 
-        <div class="image-container">
-            <img id="courcePic" src="./img/picture_1.png" alt="Data Science Banner">
+
+        <section id="intro" class="py-5 ">
+            <div class="container text-center">
+              <img src="./img/DataScience.jpg" alt="Technacode Data Science" class="img-fluid rounded shadow mb-4" style="max-height: 350px;">
+          
+              <p class="mb-4">
+                Learn everything from basics to advanced topics in programming, data science, and database systems like MongoDB and SQL.
+                Our courses suit beginners and professionals looking to sharpen their skills — with hands-on projects, real-world scenarios, and up-to-date content.
+              </p>
+          
+              <p class="mb-4">
+                Whether you're aiming for a career in web development, data analytics, or backend programming, Technacode has a course tailored for you.
+              </p>
+          
+              <p class="fw-bold text-success text-light">✅ Register first to access learning materials and track your course progress.</p>
+            </div>
+          </section>
+          
+          <section class="container py-5">
+            <header class="text-center mb-5">
+              <h2 class="fw-bold text-primary text-dark">🚀 Start Learning with Technacode</h2>
+              <p class="text-muted">Choose a category to begin your journey</p>
+            </header>
+          
+            <!-- Section Template -->
+            <div class="mb-5">
+              <h3 class="fw-semibold text-center mb-3">💻 Programming Basics</h3>
+              <p class="text-muted text-center mb-4">Start with essential programming languages and web development skills</p>
+              <div class="row g-3 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-dark w-100 py-3 rounded-3 shadow-sm">🐍 Python</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-primary w-100 py-3 rounded-3 shadow-sm">🌐 HTML</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-success w-100 py-3 rounded-3 shadow-sm">🎨 CSS</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-warning w-100 py-3 rounded-3 shadow-sm">⚡ JavaScript</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-danger w-100 py-3 rounded-3 shadow-sm">🗄️ SQL</a></div>
+              </div>
+            </div>
+          
+            <div class="mb-5">
+              <h3 class="fw-semibold text-center mb-3">🛠️ Software Engineering</h3>
+              <p class="text-muted text-center mb-4">Learn key concepts and tools for software engineering</p>
+              <div class="row g-3 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-secondary w-100 py-3 rounded-3 shadow-sm">🛠️ Software Engineering</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-dark w-100 py-3 rounded-3 shadow-sm">📐 System Design</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-success w-100 py-3 rounded-3 shadow-sm">📋 Agile & Scrum</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-info w-100 py-3 rounded-3 shadow-sm">🧪 Software Testing</a></div>
+              </div>
+            </div>
+          
+            <div class="mb-5">
+              <h3 class="fw-semibold text-center mb-3">📊 Data Science & AI</h3>
+              <p class="text-muted text-center mb-4">Master data analysis, machine learning, and AI technologies</p>
+              <div class="row g-3 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-primary w-100 py-3 rounded-3 shadow-sm">📊 Data Science</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-warning w-100 py-3 rounded-3 shadow-sm">🤖 Machine Learning</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-danger w-100 py-3 rounded-3 shadow-sm">🧠 Deep Learning</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-secondary w-100 py-3 rounded-3 shadow-sm">📈 Data Visualization</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-success w-100 py-3 rounded-3 shadow-sm">📉 Predictive Analytics</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-primary w-100 py-3 rounded-3 shadow-sm">🧮 Statistics for DS</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-dark w-100 py-3 rounded-3 shadow-sm">📚 NLP & Text Mining</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-info w-100 py-3 rounded-3 shadow-sm">🛠️ Data Engineering</a></div>
+              </div>
+            </div>
+          
+            <div class="mb-5">
+              <h3 class="fw-semibold text-center mb-3">📊 Market Research & Insights</h3>
+              <p class="text-muted text-center mb-4">Explore market research, consumer analysis, and data tools</p>
+              <div class="row g-3 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-info w-100 py-3 rounded-3 shadow-sm">📊 Market Research</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-dark w-100 py-3 rounded-3 shadow-sm">🔎 Decipher & Market Tools</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-warning w-100 py-3 rounded-3 shadow-sm">📈 Data Analytics for Marketing</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-success w-100 py-3 rounded-3 shadow-sm">📊 Consumer Behavior Analysis</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-primary w-100 py-3 rounded-3 shadow-sm">📉 Marketing Analytics</a></div>
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-danger w-100 py-3 rounded-3 shadow-sm">📚 Survey Design & Analysis</a></div>
+              </div>
+            </div>
+          
+            <div class="mb-5">
+              <h3 class="fw-semibold text-center mb-3">📦 Other Courses</h3>
+              <p class="text-muted text-center mb-4">Learn Git, GitHub, and other essential development tools</p>
+              <div class="row g-3 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-3"><a href="#" class="btn btn-warning w-100 py-3 rounded-3 shadow-sm">📦 Git & GitHub</a></div>
+              </div>
+            </div>
+          
+            <div class="text-center mt-5">
+              <h3 class="fw-semibold text-dark mb-3">🎉 Start For Free</h3>
+              <a href="./register.html" class="btn btn-success btn-lg px-5 py-2 rounded-pill shadow mb-5 btn-register">Register Now</a>
+            </div>
+        </section>
+          
+
+
+
+        <!-- Section 5: Closing Banner -->
+        <div class="text-center mt-5">
+            <img src="./img/picture_1.png" class="img-fluid rounded shadow w-100" style="max-width: 800px;">
         </div>
+
     </main>
-
-    <div class="mb-0 pb-5" style="width: auto; background-color: #fdfdfd; color: black;">
-        <div class="row g-0">
-            <div class="col-md-3">
-                <img src="./img/technacode_logo.png" style="margin-top: 55px;" class="img-fluid rounded-start" alt="Loading...">
-            </div>
-            <div class="col-md-9 mt-5">
-                <div class="card-body">
-                    <h4 class="card-title">Welcome to Technacode – Your Gateway to Tech Learning and Career Growth!</h4>
-                    <p class="card-text mt-3">Technacode is a dynamic platform designed for students, professionals, and tech enthusiasts who want to enhance their skills, stay updated with industry trends, and unlock new career opportunities. Whether you're diving into new subjects, exploring job openings, or getting certified to boost your resume, Technacode is here to support your journey.</p>
-                    <h3>🚀 Why Choose Technacode?</h3>
-                        <ul>
-                          <li>📚 <strong>Easy-to-follow content</strong> on trending tech topics to help you stay ahead.</li>
-                          <li>🛠 <strong>Hands-on skills</strong> that prepare you for real-world challenges.</li>
-                          <li>🎓 <strong>Certification programs</strong> to boost your resume and credibility.</li>
-                          <li>📢 <strong>Job listings and hiring support</strong> to connect you with your dream career.</li>
-                          <li>🌍 <strong>A thriving community</strong> of learners and mentors to support your growth.</li>
-                        </ul>
-                    <p class="card-text">At Technacode, we believe learning should be accessible, engaging, and practical. Join us today and start your path to becoming a confident, job-ready tech professional.</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div id="testimonials">
         <h2>What Our Learners Say</h2>
         <div class="testimonial-container">
             <div class="testimonial">
                 <p>"Technacode made learning programming so easy and enjoyable. The courses are structured perfectly for beginners, and the hands-on projects helped me build real skills."</p>
-                <span>- Zeeshan khan.</span>
+                <span>- Nahida Nisar.</span>
             </div>
             <div class="testimonial">
                 <p>"I was able to transition into a data analyst role after completing Technacode's Data Science course. The content is always up-to-date, and the instructors are really supportive."</p>
-                <span>- Junaid Ali.</span>
+                <span>- Aman Husan.</span>
             </div>
             <div class="testimonial">
                 <p>"As a web developer, I was looking to improve my skills in JavaScript and CSS. Technacode's courses provided clear, actionable content that helped me become a better developer."</p>
-                <span>- Keshav.</span>
+                <span>- Aftab Alam.</span>
             </div>
             <div class="testimonial">
                 <p>"The Python course was so comprehensive, and I appreciated the practical assignments. It helped me not only learn Python but also apply it to real-world projects."</p>
@@ -167,41 +249,54 @@
             </div>
             <div class="testimonial">
                 <p>"I completed the SQL course, and it completely changed my career trajectory. I now work as a database administrator, thanks to the skills I acquired through Technacode."</p>
-                <span>- Nahida Nisar.</span>
+                <span>- Gaurav.</span>
             </div>
             <div class="testimonial">
                 <p>"Technacode's platform made learning web development fun! The HTML, CSS, and JavaScript modules were engaging, and the instructors were very responsive."</p>
-                <span>- Prince.</span>
+                <span>- Madhur Chauhan.</span>
             </div>
         </div>
+        <!-- Left and Right Buttons -->
+        <button class="prev-btn">←</button>
+        <button class="next-btn">→</button>
     </div>
 
-    <div class="followUS">
-        <p><strong><h4>Follow us:</h4></strong></p>
-        <a href="https://technacode.blogspot.com/" target="_blank">My_Blog</a><br><br>
-        <a href="http://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
-        <a href="http://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
-        <a href="http://www.youtube.com" class="fa fa-youtube" target="_blank"></a><br><br>
-        <p>
-            Technacode is optimized for learning and training. Examples may be simplified to improve clarity. <br>
-            © 2024-2025 technacode.com. All rights reserved. Powered by technacode.
-        </p>
-    </div>
+    <footer class="bg-dark text-light py-4 ">
+        <div class="container text-center">  
+            <p><strong><h4>Follow us:</h4></strong></p>
+            <a href="https://technacode.blogspot.com/" target="_blank">My_Blog</a><br><br>
+            <a href="https://www.linkedin.com" class="fa fa-linkdin" target="_blank">LinkedIn</a>
+            <a href="https://www.github.com" class="fa fa-github" target="_blank">GitHub</a>
+            <a href="http://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+            <a href="http://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+            <a href="http://www.youtube.com" class="fa fa-youtube" target="_blank"></a><br><br>
+            <p>
+                Technacode is optimized for learning and training. Examples may be simplified to improve clarity. <br>
+                © 2024-2025 technacode.com. All rights reserved. Powered by technacode.
+            </p>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS (for dropdown functionality) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Animate image with scale effect every few seconds
-        const image = document.getElementById('mainImage');
-        setInterval(() => {
-            image.style.transform = 'scale(1.2)';
-            setTimeout(() => {
-                image.style.transform = 'scale(1)';
-            }, 1000);
-        }, 5000);
+    
 
+    <script>
+            const textElement = document.getElementById("typedText");
+            const fullText = "Learn. Build. Grow. Explore tech courses, skills & career paths with ease.";
+            let index = 0;
+          
+            function typeEffect() {
+              if (index < fullText.length) {
+                textElement.textContent += fullText.charAt(index);
+                index++;
+                setTimeout(typeEffect, 60); // Adjust typing speed here
+              }
+            }
         
-    </script>
+            typeEffect();
+    </script>    
+  
 </body>
 
 </html>
