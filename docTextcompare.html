@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Compare Full Texts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 600px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    textarea {
+      width: 90%;
+      height: 120px;
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px 0;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      resize: none;
+      transition: border 0.3s;
+    }
+    .match {
+      border-color: green !important;
+      background-color: #e9fbe9;
+    }
+    .no-match {
+      border-color: red !important;
+      background-color: #fdeaea;
+    }
+    button {
+      padding: 10px 25px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .result {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Compare Full Texts</h2>
+    <textarea id="text1" placeholder="Enter first text here..."></textarea>
+    <textarea id="text2" placeholder="Enter second text here..."></textarea>
+    <br>
+    <button onclick="compareText()">Compare</button>
+    <div id="result" class="result"></div>
+  </div>
+
+  <script>
+    function compareText() {
+      const text1 = document.getElementById('text1');
+      const text2 = document.getElementById('text2');
+      const result = document.getElementById('result');
+
+      const val1 = text1.value.trim();
+      const val2 = text2.value.trim();
+
+      if (val1 === "" || val2 === "") {
+        result.textContent = "Please fill in both text boxes.";
+        result.style.color = "red";
+        text1.classList.remove('match', 'no-match');
+        text2.classList.remove('match', 'no-match');
+        return;
+      }
+
+      if (val1 === val2) {
+        result.textContent = "Text is correct ✅";
+        result.style.color = "green";
+        text1.classList.add('match');
+        text2.classList.add('match');
+        text1.classList.remove('no-match');
+        text2.classList.remove('no-match');
+      } else {
+        result.textContent = "Text is incorrect ❌";
+        result.style.color = "red";
+        text1.classList.add('no-match');
+        text2.classList.add('no-match');
+        text1.classList.remove('match');
+        text2.classList.remove('match');
+      }
+    }
+  </script>
+
+</body>
+</html>
